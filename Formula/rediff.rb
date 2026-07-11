@@ -1,25 +1,25 @@
 class Rediff < Formula
   desc "A fast Rust TUI git-diff viewer for reviewing changes"
-  homepage "https://github.com/martynovs/rediff"
+  homepage "https://github.com/kennworx/rediff"
   version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/martynovs/rediff/releases/download/v0.1.0/rediff-aarch64-apple-darwin.tar.xz"
-      sha256 "165dd9932dbccba034bad6368155d0558fa74aa131c01c09304a57368060153a"
+      url "https://github.com/kennworx/rediff/releases/download/v0.1.0/rediff-aarch64-apple-darwin.tar.xz"
+      sha256 "5abb4b2a55ab526e349e69d5c9ec223dcb29cd514c872b0500db5df1c429b4f3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/martynovs/rediff/releases/download/v0.1.0/rediff-x86_64-apple-darwin.tar.xz"
-      sha256 "3dd948e005fa886230a7b168fb618e587670c81376e4ababe6b416975a2de0ba"
+      url "https://github.com/kennworx/rediff/releases/download/v0.1.0/rediff-x86_64-apple-darwin.tar.xz"
+      sha256 "b64e0c2f8cc8bdb6123656a6b37e9ca27147cfbafc394d0423d9f40802916cbe"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/martynovs/rediff/releases/download/v0.1.0/rediff-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2b5bc0894b91f83e9a8fd457d2900597d1bc1ad7a2029c171647772f128b33e6"
+      url "https://github.com/kennworx/rediff/releases/download/v0.1.0/rediff-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9fb21cdd81daee1298b1e83effa93e93aedf2b4aeaf2c3f47a47a75d92aaf52b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/martynovs/rediff/releases/download/v0.1.0/rediff-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6664740106d9a62ca6fc9d58f4d67930c3c307a462940a9a24f578980190f088"
+      url "https://github.com/kennworx/rediff/releases/download/v0.1.0/rediff-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ce44e190d62d4a9f242a75b041d67098f8be95d3f1cd9b5e0ed9573d308c1f08"
     end
   end
   license "MIT"
