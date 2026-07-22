@@ -1,19 +1,19 @@
 class Kenn < Formula
   desc "Code graph for your codebase — and for the agents working on it"
   homepage "https://github.com/kennworx/kenn"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kennworx/kenn/releases/download/v0.1.0/kenn-aarch64-apple-darwin.tar.xz"
-    sha256 "c5049153bb1387cc8d4197f0fc2cc4a47b79e071509d462e4d553b71e806f4cb"
+    url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-aarch64-apple-darwin.tar.xz"
+    sha256 "18417b86a7d96cba4de8838edff7406e7c55f6e8444658f9055b9bc9db0cd435"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kennworx/kenn/releases/download/v0.1.0/kenn-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "65998c75b3d244a95c842e73133d2db043d46870ffc654b79317fc1c0f058f44"
+      url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "56323e4b54237784ae1a3a388cd7d930cd008a7f7f7303c6dde493800ff08389"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kennworx/kenn/releases/download/v0.1.0/kenn-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "621dac878d1d5521ca5ef0b36dd2413e1b2dfe8f3591e850f5a247286d114220"
+      url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "192a35f1f26f2e2b9615df95720979e09b4ccd6ce369a0c04d58ea75f6044e15"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
@@ -21,6 +21,7 @@ class Kenn < Formula
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
