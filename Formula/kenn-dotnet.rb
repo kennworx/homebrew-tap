@@ -1,24 +1,24 @@
 class KennDotnet < Formula
   desc "kenn's C# indexer (self-contained)"
   homepage "https://github.com/kennworx/kenn"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT OR Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-dotnet-aarch64-apple-darwin.tar.gz"
-      sha256 "c7037c7ab8d887ccd3d73994437cdf5cfb34d5c27841ea66cf27725bd8e08142"
+      url "https://github.com/kennworx/kenn/releases/download/v0.2.1/kenn-dotnet-aarch64-apple-darwin.tar.gz"
+      sha256 "4c970858f6d56e0ade3ea839ba9d193f13fa2291678cccd0564b39ae2f3797af"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-dotnet-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3f59c9e8b7a2cdef0b58908b6909223211b90296280191d4efc0f5c22055de8c"
+      url "https://github.com/kennworx/kenn/releases/download/v0.2.1/kenn-dotnet-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "90c3f6b3d5cf7f9f75667be4e2abe837fef9493e7e1eea691d32a198647baf10"
     end
     on_intel do
-      url "https://github.com/kennworx/kenn/releases/download/v0.2.0/kenn-dotnet-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3f43c8d815d57a07e8318d4394e7363c7bacad4e7111e43038d338f9273af8b1"
+      url "https://github.com/kennworx/kenn/releases/download/v0.2.1/kenn-dotnet-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "05236ac9d9671ee050d859d46cf7d2ea06d93cfb7a7497b5c1350a14935544f9"
     end
   end
 
