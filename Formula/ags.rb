@@ -5,21 +5,21 @@ class Ags < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/kennworx/agent-stage/releases/download/v0.1.0/ags-aarch64-apple-darwin.tar.xz"
-      sha256 "37b43a431b4a0a754a7802d511cf153be739ca8d27fe6540e81bcf5c2acab4bb"
+      sha256 "3ca50f1ddb0827b906de295475207067c921f4ab3cc3ebf2b6e85f08f67bcb4f"
     end
     if Hardware::CPU.intel?
       url "https://github.com/kennworx/agent-stage/releases/download/v0.1.0/ags-x86_64-apple-darwin.tar.xz"
-      sha256 "547f0a143e53f36e6bd28339500c7870a5f2542a6a8673eb1291e89536e6b6f5"
+      sha256 "88f53328e5e8a0256d6abb8f8acea0eed58e2212bf784ff81fb01bf077d9f6ec"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/kennworx/agent-stage/releases/download/v0.1.0/ags-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1a986d3107f43379dcf0765ee5199007cabb3d04160ac8657510472d8db5b34b"
+      sha256 "d0e38a62d7fead4238c41d6ae29771c94bfc4a2c5e030c916030bd520b37c3fe"
     end
     if Hardware::CPU.intel?
       url "https://github.com/kennworx/agent-stage/releases/download/v0.1.0/ags-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "95cbb3e4963659044c78a86ec9132653172b5d72f4bc5bfcd84a5bea39ecda79"
+      sha256 "d4ec1affab825a5df8fb8feaa54b5def555e562132709c1b105af13c6b17b1a0"
     end
   end
   license "MIT"
